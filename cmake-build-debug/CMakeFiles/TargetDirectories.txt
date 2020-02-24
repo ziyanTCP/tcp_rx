@@ -1,0 +1,3 @@
+/home/ziyan/zhun/test/dpdk/examples/MinimalDPDKExamples/tcp_rx/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ziyan/zhun/test/dpdk/examples/MinimalDPDKExamples/tcp_rx/cmake-build-debug/CMakeFiles/tcp_rx.dir
+/home/ziyan/zhun/test/dpdk/examples/MinimalDPDKExamples/tcp_rx/cmake-build-debug/CMakeFiles/edit_cache.dir

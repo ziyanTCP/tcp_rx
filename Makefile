@@ -2,7 +2,7 @@
 # Copyright(c) 2010-2014 Intel Corporation
 
 # binary name
-APP = minimal_rx
+APP = tcp_rx
 
 # all source are stored in SRCS-y
 SRCS-y := tcp_rx.c
@@ -19,6 +19,10 @@ SRCS-y := $(SRCS-y) /home/ziyan/Dropbox/mylibrary/dpdk_tools/lib/tcp/hashtable.c
 SRCS-y := $(SRCS-y) /home/ziyan/Dropbox/mylibrary/dpdk_tools/lib/tcp/init.c
 SRCS-y := $(SRCS-y) /home/ziyan/Dropbox/mylibrary/dpdk_tools/lib/tcp/socket.c
 SRCS-y := $(SRCS-y) /home/ziyan/Dropbox/mylibrary/dpdk_tools/lib/tcp/dpdk_module.c
+SRCS-y := $(SRCS-y) /home/ziyan/Dropbox/mylibrary/dpdk_tools/lib/tcp/tcp_ring_buffer.c
+SRCS-y := $(SRCS-y) /home/ziyan/Dropbox/mylibrary/dpdk_tools/lib/tcp/tcp_rb_frag_queue.c
+
+
 # Build using pkg-config variables if possible
 $(shell pkg-config --exists libdpdk)
 ifeq ($(.SHELLSTATUS),0)

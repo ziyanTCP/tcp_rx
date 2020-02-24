@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/minimal_rx.dir/tcp_rx.c.o CMakeFiles/minimal_rx.dir/home/ziyan/Dropbox/mylibrary/dpdk_tools/lib/tcp/tcp.c.o  -o minimal_rx  -L/home/ziyan/song/Dropbox/dpdk/x86_64-native-linuxapp-gcc/include  -L/home/ziyan/Dropbox/mylibrary/dpdk_tools/lib/tcp 

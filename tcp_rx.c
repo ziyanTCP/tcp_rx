@@ -1,10 +1,3 @@
-// Adapted from: https://github.com/DPDK/dpdk/blob/master/examples/skeleton/basicfwd.c
-// by Thomas Edwards, Walt Disney Television
-
-/* SPDX-License-Identifier: BSD-3-Clause
- * Copyright(c) 2010-2015 Intel Corporation
- */
-
 #include <stdio.h>
 #include <stdint.h>
 #include <signal.h>
@@ -14,7 +7,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#include "/home/ziyan/Dropbox/mylibrary/dpdk_tools/lib/dpdk_utility.h"
+//change it to the path for the ziyan_tcpstack
+#include "/home/ziyan/Dropbox/mylibrary/ziyan_tcpstack/lib/dpdk_utility.h"
 
 uint64_t packet_count = 0;
 void exit_stats(int sig)
@@ -43,7 +37,7 @@ int main(int argc, char *argv[])
 
 	signal(SIGINT, exit_stats);
 
-    //printf("\nCore %u receiving packets. [Ctrl+C to quit]\n", rte_lcore_id());
+/*    //printf("\nCore %u receiving packets. [Ctrl+C to quit]\n", rte_lcore_id());
     int c=0;
     while ((c = getopt(argc, argv, "m:s:d:h")) != -1)
         switch(c) {
@@ -75,7 +69,7 @@ int main(int argc, char *argv[])
     if(ip_dst_flag==0) {
         fprintf(stderr, "missing -d for IP destination adress\n");
         exit(1);
-    }
+    }*/
 
 
 
